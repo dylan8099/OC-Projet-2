@@ -209,7 +209,7 @@ header {
 .card {
   background-color: white;
   border-radius: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 3px 15px 0px #0000001a;
 }
 
 .card img {
@@ -248,10 +248,10 @@ header {
 }
 
 .hebergements-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  flex: 1;
+  border-radius: 20px;
 }
 
 .hebergements .card-content {
@@ -275,7 +275,7 @@ header {
 }
 
 .hebergements .card {
-  display: block;
+  flex: 1 1 calc(33% - 30px);
   height: 207.25px;
   background-color: white;
   border-radius: 20px;
@@ -291,7 +291,8 @@ header {
 
 .hebergements .card img {
   display: block;
-  height: 114px;
+  box-sizing: border-box;
+  height: 124px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -350,19 +351,19 @@ header {
 
 .populaires-cards .card {
   display: flex;
-  border: solid 5px white;
 }
 
 .populaires-cards img {
-  width: 33%;
+  width: 34%;
   height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  border: solid 5px white;
 }
 
 .populaires-cards .card-content {
   width: 67%;
-  padding-left: 15px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -552,6 +553,11 @@ footer {
     background-color: white;
   }
 
+  .hebergements .card {
+    flex: 1 1 calc(100% - 30px);
+    box-shadow: 0px 3px 15px 0px #0000001a;
+  }
+
   .populaires {
     order: -1;
     padding: 30px;
@@ -585,21 +591,20 @@ footer {
   .populaires-cards .card {
     display: flex;
     border-radius: 20px;
-    min-height: 136px;
+    min-height: 146px;
   }
 
   .populaires-cards img {
+    object-fit: cover;
     width: 33%;
     height: 136px;
-    object-fit: cover;
-    display: block;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
 
   .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -624,31 +629,9 @@ footer {
   }
 
   .hebergements-cards {
-    grid-template-columns: 1fr;
     gap: 15px;
     flex: 1;
     overflow: hidden;
-  }
-
-  .hebergements .card {
-    display: block;
-    height: 207.25px;
-    border-radius: 20px;
-  }
-
-  .hebergements .card > article {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .hebergements .card img {
-    display: block;
-    height: 120px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
   }
 
   .hebergements .card-content {
@@ -732,35 +715,6 @@ footer {
     flex: none;
     height: 611.5px;
     background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .hebergements-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    flex: 1;
-  }
-
-  .hebergements .card {
-    height: 207.25px;
-  }
-  .hebergements .card > article {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .hebergements .card img {
-    display: block;
-    height: 120px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
   }
 
   .populaires {
@@ -773,33 +727,21 @@ footer {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
 
   .populaires-cards {
-    flex: 1;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
   }
   .populaires-cards a {
     flex: 1 1 0;
     display: block;
   }
-  .populaires-cards .card {
-    height: 100%;
-    display: flex;
-  }
-  .populaires-cards img {
-    width: 33%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border: 5px solid white;
-  }
   .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
