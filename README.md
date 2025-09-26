@@ -2,7 +2,6 @@
   <a href="https://github.com/dylan8099/OC-Projet-2">
     <img src="images/logo/Booki.png" alt="Logo" width="61" height="19">
   </a>
-  <br/>
 </div>
 
 Projet 2 de la formation OpenClassrooms "Développeur Web" | Dylan Renier | Septembre 2025
