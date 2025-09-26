@@ -2,11 +2,12 @@
   <a href="https://github.com/dylan8099/OC-Projet-2">
     <img src="images/logo/Booki.png" alt="Logo" width="61" height="19">
   </a>
+  <br/>
 </div>
 
 Projet 2 de la formation OpenClassrooms "Développeur Web" | Dylan Renier | Septembre 2025
 
-Booki est une petite entreprise qui propose à ses utilisateurs de planifier leurs vacances en trouvant un hébergement et des activités dans la ville de leur choix. Les utilisateurs peuvent également appliquer des filtres afin d’afficher les résultats selon la thématique sélectionnée.
+Booki est une petite entreprise qui propose à ses utilisateurs de planifier leurs vacances en trouvant un hébergement et des activités dans la ville de leur choix. Les utilisateurs peuvent également appliquer des filtres afin d’afficher les résultats selon la thématique sélectionnée. L’objectif est de réaliser l’interface du site à partir d’une maquette, en utilisant uniquement du code HTML et CSS.
 
 ## Technologies
 
